@@ -1,0 +1,12 @@
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\bin\Debug\net5.0\AuthServer.Shared.deps.json
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\bin\Debug\net5.0\AuthServer.Shared.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\bin\Debug\net5.0\ref\AuthServer.Shared.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\bin\Debug\net5.0\AuthServer.Shared.pdb
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.AssemblyInfoInputs.cache
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.AssemblyInfo.cs
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\ref\AuthServer.Shared.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.pdb
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Shared\obj\Debug\net5.0\AuthServer.Shared.csproj.AssemblyReference.cache

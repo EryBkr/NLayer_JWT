@@ -129,19 +129,6 @@
         "runtime": {
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
-      },
-      "AuthServer.Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/AuthServer.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AuthServer.Shared.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -371,16 +358,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "AuthServer.Shared/1.0.0": {
-      "type": "project",
-      "path": "../AuthServer.Shared/AuthServer.Shared.csproj",
-      "msbuildProject": "../AuthServer.Shared/AuthServer.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "AuthServer.Shared >= 1.0.0",
       "Microsoft.Extensions.Identity.Stores >= 5.0.8"
     ]
   },
@@ -417,11 +398,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Blackerback\\OneDrive\\Masaüstü\\NetCoreJwt\\AuthServer\\AuthServer.Shared\\AuthServer.Shared.csproj": {
-              "projectPath": "C:\\Users\\Blackerback\\OneDrive\\Masaüstü\\NetCoreJwt\\AuthServer\\AuthServer.Shared\\AuthServer.Shared.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

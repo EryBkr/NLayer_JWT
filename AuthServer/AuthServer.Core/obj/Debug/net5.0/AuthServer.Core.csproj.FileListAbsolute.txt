@@ -9,7 +9,3 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\o
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\obj\Debug\net5.0\AuthServer.Core.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\obj\Debug\net5.0\ref\AuthServer.Core.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\obj\Debug\net5.0\AuthServer.Core.pdb
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\bin\Debug\net5.0\AuthServer.Shared.dll
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\bin\Debug\net5.0\AuthServer.Shared.pdb
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\obj\Debug\net5.0\AuthServer.Core.csproj.AssemblyReference.cache
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Core\obj\Debug\net5.0\AuthServer.Core.csproj.CopyComplete

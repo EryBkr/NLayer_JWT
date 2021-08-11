@@ -1,4 +1,4 @@
-﻿using AuthServer.Shared.Dtos;
+﻿using AuthServer.Core.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

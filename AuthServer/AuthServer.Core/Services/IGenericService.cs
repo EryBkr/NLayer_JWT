@@ -21,15 +21,15 @@ namespace AuthServer.Core.Services
         Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate);
 
         //DB de oluşturduğum datayı dto ya çevirip response ile paketleyip dönüyorum
-        Task<Response<TDto>> AddAsync(TEntity entity);
+        Task<Response<TDto>> AddAsync(TDto entity);
 
         //Asenkron metodu olmadığı için bu şekilde kullandık
         //Response dönebilmek için NoData adında boş bir class ekledim
-        Response<NoData> Remove(TEntity entity);
+        Response<NoData> Remove(TDto entity);
 
         //Güncelleme işleminden sonra Response NoData dönüyorum
         //Asenkron metodu olmadığı için bu şekilde kullandık
-        Response<NoData> Update(TEntity entity);
+        Response<NoData> Update(TDto entity);
 
        
     }

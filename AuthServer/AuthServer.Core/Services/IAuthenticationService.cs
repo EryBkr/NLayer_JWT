@@ -19,6 +19,6 @@ namespace AuthServer.Core.Services
         Task<Response<NoData>> RevokeRefreshToken(string refreshToken);
 
         //Aplikasyonların apilere iletişimi için
-        Task<Response<ClientTokenDto>> CreateTokenByClient(ClientLoginDto clientLogin);
+        Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLogin);
     }
 }

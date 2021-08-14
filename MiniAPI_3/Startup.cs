@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,7 +12,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MiniAPI_3.Models;
 
 namespace MiniAPI_3
 {
@@ -28,6 +32,32 @@ namespace MiniAPI_3
         {
 
             services.AddControllers();
+
+            //JWT ayarlarında tanımlayacağım için IOptions pattern mantığında ki gibi Modelime appsettings te ki datamı bind ettim
+            var tokenOptions = Configuration.GetSection("TokenOptions").Get<CustomTokenOption>();
+
+            //JWT Bearer ı ekliyorum
+            services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; //Şema İsmi belirlendi
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; //JWT şeması ile bağladım.Onu aşağıda tanımladım
+            }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, opt =>
+            {
+                //Jwt özelliklerini belirliyorum
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    //Key i verdik
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenOptions.SecurityKey)),
+                    ValidIssuer = tokenOptions.Issuer,
+                    ValidAudience = tokenOptions.Audience,//Buna istek yapabilmesi için buna ait auidence bilgisinin tokene verilmiş olması gerekir.
+                    ValidateIssuerSigningKey = true,//İmza doğrulanmalı
+                    ValidateAudience = true,//Audience kontrol edilsin
+                    ValidateIssuer = true,//Issuer  i de doğrula
+                    ValidateLifetime = true,//Yaşam ömrü de kontrol edilsin
+                    ClockSkew = TimeSpan.Zero //Sunucu Time Zone farklılığından dolayı default olarak 5 dk ekliyor son zamana.Bunu iptal ediyoruz
+                };
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MiniAPI_3", Version = "v1" });
@@ -48,6 +78,7 @@ namespace MiniAPI_3
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

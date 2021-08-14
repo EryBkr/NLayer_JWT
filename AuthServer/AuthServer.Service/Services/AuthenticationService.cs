@@ -72,7 +72,7 @@ namespace AuthServer.Service.Services
             if (clientLogin == null) throw new ArgumentException(nameof(clientLogin));
 
             //appsettings e kaydettiğimiz Client ların(aplikasyonlar)  içerisinderinden bize istek yapan client ı alıyoruz ve ona özel token oluşturuyoruz
-            var client = _clients.SingleOrDefault(x => x.Id == clientLogin.ClientId && x.Secret == clientLogin.ClientSecret);
+            var client = _clients.SingleOrDefault(x => x.ClientId == clientLogin.ClientId && x.ClientSecret == clientLogin.ClientSecret);
 
             if (client == null) return Response<ClientTokenDto>.Fail("ClientId or ClientSecret Not Found", 400, true);
 

@@ -27,3 +27,10 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\obj\Debug\net5.0\M
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\obj\Debug\net5.0\ref\MiniAPI_2.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\obj\Debug\net5.0\MiniAPI_2.pdb
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\obj\Debug\net5.0\MiniAPI_2.genruntimeconfig.cache
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\MiniAPI_2\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

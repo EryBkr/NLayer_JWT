@@ -9,7 +9,7 @@ namespace AuthServer.Service.Services
 {
     //Token İmzasını oluşturacak
     //Simetrik şifreleme yapıyoruz
-    static class SignService
+   public static class SignService
     {
         public static SecurityKey GetSymmetricSecurityKey(string securityKey)
         {

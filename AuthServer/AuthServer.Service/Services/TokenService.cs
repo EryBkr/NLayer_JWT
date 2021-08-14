@@ -58,6 +58,7 @@ namespace AuthServer.Service.Services
             };
 
             //Claim listeme geçerli olan Audience bilgilerini tek tek ekledim
+            //kimin için imzalanıyor, hangi apilere istek atabiliriz
             claimList.AddRange(audiences.Select(i => new Claim(JwtRegisteredClaimNames.Aud, i)));
 
             return claimList;
@@ -70,13 +71,14 @@ namespace AuthServer.Service.Services
             var claimList = new List<Claim>
             {
                 //Bu Token kimin için oluşturuluyor
-                new Claim(JwtRegisteredClaimNames.Sub,client.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.Sub,client.ClientId.ToString()),
                 //Token a random id veriyoruz belki lazım olur
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
             };
 
             //Claim listeme geçerli olan Audience bilgilerini tek tek ekledim
-            claimList.AddRange(client.Audiences.Select(i => new Claim(JwtRegisteredClaimNames.Aud, i)));
+            //kimin için imzalanıyor, hangi apilere istek atabiliriz
+            claimList.AddRange(client.Audience.Select(i => new Claim(JwtRegisteredClaimNames.Aud, i)));
 
             return claimList;
         }
@@ -98,7 +100,7 @@ namespace AuthServer.Service.Services
                     issuer: _tokenOptions.Issuer, //Kim imzalıyor
                     expires: accessTokenExpireTime, //Sona erme zamanı
                     notBefore: DateTime.Now, //Başlangıç zamanı
-                    claims: GetClaims(user, _tokenOptions.Audience), //kimin için imzalanıyor
+                    claims: GetClaims(user, _tokenOptions.Audience), //kimin için imzalanıyor, hangi apilere istek atabiliriz
                     signingCredentials: signingCredentials //imza
                 );
 
@@ -136,7 +138,7 @@ namespace AuthServer.Service.Services
                     issuer: _tokenOptions.Issuer, //Kim imzalıyor
                     expires: accessTokenExpireTime, //Sona erme zamanı
                     notBefore: DateTime.Now, //Başlangıç zamanı
-                    claims: GetClaimsByClient(client), //kimin için imzalanıyor
+                    claims: GetClaimsByClient(client), //kimin için imzalanıyor, hangi apilere istek atabiliriz
                     signingCredentials: signingCredentials //imza
                 );
 

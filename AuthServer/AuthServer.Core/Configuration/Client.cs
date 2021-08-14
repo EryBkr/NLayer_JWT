@@ -10,10 +10,10 @@ namespace AuthServer.Core.Configuration
     public class Client
     {
         //Aplikasyon kimlik bilgileri
-        public string Id { get; set; }
-        public string Secret { get; set; }
+        public string ClientId { get; set; }
+        public string ClientSecret { get; set; }
 
         //Hangi Apilere erişim olacak
-        public List<string> Audiences { get; set; }
+        public List<string> Audience { get; set; }
     }
 }

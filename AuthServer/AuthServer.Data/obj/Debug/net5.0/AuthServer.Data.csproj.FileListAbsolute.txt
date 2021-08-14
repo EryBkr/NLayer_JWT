@@ -1,4 +1,6 @@
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.deps.json
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.runtimeconfig.json
+C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.runtimeconfig.dev.json
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\ref\AuthServer.Data.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.pdb
@@ -13,6 +15,4 @@ C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\o
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\obj\Debug\net5.0\AuthServer.Data.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\obj\Debug\net5.0\ref\AuthServer.Data.dll
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\obj\Debug\net5.0\AuthServer.Data.pdb
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.runtimeconfig.json
-C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\bin\Debug\net5.0\AuthServer.Data.runtimeconfig.dev.json
 C:\Users\Blackerback\OneDrive\Masaüstü\NetCoreJwt\AuthServer\AuthServer.Data\obj\Debug\net5.0\AuthServer.Data.genruntimeconfig.cache
